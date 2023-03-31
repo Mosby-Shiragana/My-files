@@ -1,0 +1,8 @@
+body{background-color: blue;}
+table{text-align: center;background-color: cyan;width: 100%;}
+td{padding: 50px 30px;}
+tr:nth-child(even){background-color: hotpink;}
+td:nth-child(even){background-color: hotpink;}
+td:target{color: red;background-color: orange;text-decoration: underline;}
+a:hover{background-color: orange;color: lime;font-size: 30px;}
+.net:hover{background-color: orange;color: lime;text-decoration: underline;}

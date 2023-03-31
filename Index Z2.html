@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aki</title>
+    <style type="text/css">
+        body{background: #c5ffa0;}
+        a{position: absolute; z-index: auto; top: 100px;border: #000000 1px solid;}
+        a:hover{position: absolute; z-index: 1; top: 80px; border: #800000 1px solid;}
+    </style>
+</head>
+<body>
+    <h2>Проведите курсором по картам</h2>
+    <a href="#" style="left: 10px"><div style="width: 150px; height: 150px; background-color: #ff00ff; cursor:auto"></div></a>
+    <a href="#" style="left: 30px"><div style="width: 150px; height: 150px; background-color: #ffbb00; cursor: move;"></div></a>
+    <a href="#" style="left: 50px"><div style="width: 150px; height: 150px; background-color: #e5ff00; cursor: help;"></div></a>
+    <a href="#" style="left: 70px"><div style="width: 150px; height: 150px; background-color: #00ff00; cursor:se-resize;"></div></a>
+    <a href="#" style="left: 90px"><div style="width: 150px; height: 150px; background-color: #00c3ff; cursor:sw-resize;"></div></a>
+    <a href="#" style="left: 110px"><div style="width: 150px; height: 150px; background-color: #ff0000; cursor:wait;"></div></a>
+    <p style="position: absolute; left: 10px; top: 250px;">В злосчастном IE6, в отличии от других браузеров, псевдокласс<b>:hover</b> работает только для ссылок, поэтому в качестве контейнера для рисунков/карт использую никуда не ведущую ссылку. (<b>a href="#"</b>)</p>
+    <p style="position: absolute; left: 10px; top: 300px;">Впрочем, IE можно "надурить" используя скрипты, просто не хочу лишний раз выходить за рамки обучения CSS.</p>
+</body>
+</html>

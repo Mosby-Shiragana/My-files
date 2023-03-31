@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classes</title>
+    <style>
+        p::after {content: " - Kaguya Shinomiya ";background-color:black;color:pink;border: 2px dashed hotpink;margin-left: 5px;padding-right: 5px;}
+        body{background: rgb(198, 55, 115);background:radial-gradient(circle, rgba(198, 55, 115)3%,rgb(252, 70, 70)100% );}
+        p{font-size: 23px;}
+        p::before {content: " Miyuki Shiragane - ";background-color: black;color: rgb(100, 149, 237);border: 2px dotted rgb(95, 158, 160);margin-right: 5px;padding-left: 5px;}
+        table,tr,th,td{border: 1px solid #ccc;text-align: center;border-collapse: collapse;padding: 8px;}
+        #toggle{display: none;}
+        .expandable{visibility: visible;background: #1c87c9;}
+        #btn{display: inline-block;margin-top: 15px;padding: 10px 20px;background-color: #00ffdd;color: #fff;cursor: pointer;border-radius: 3px;}
+        #toggle:checked~*.expandable{visibility: visible;}
+        #toggle:checked~#btn{background-color: pink;}        
+
+    </style>
+</head>
+<body>
+    <h2>Селектор ::after & ::before</h2>
+    <p>"Love is War"</p>
+    <h2>Cелектор ::checked</h2>
+    <input type="checkbox" id="toggle" />
+     <table>
+        <thead>
+            <tr>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="expandable">
+                <td>More Text1</td>
+                <td>More Text2</td>
+                <td>More Text3</td>
+            </tr>
+            <tr>
+                <td>text1</td>
+                <td>text2</td>
+                <td>text3</td>
+            </tr>
+            <tr class="expandable">
+                <td>More Text4</td>
+                <td>More Text5</td>
+                <td>More Text6</td>
+            </tr>
+            <tr>
+                <td>text4</td>
+                <td>text5</td>
+                <td>text6</td>
+            </tr> 
+            <tr class="expandable">
+                <td>More Text7</td>
+                <td>More Text8</td>
+                <td>More Text9</td>
+            </tr>
+        </tbody>
+     </table>
+     <label for="toggle" id="btn">Press here</label>
+</body>
+</html>
