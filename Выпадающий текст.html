@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Выпадающий текст</title>
+    <style>
+        .dropdown{position: relative; display: inline-block;}
+        .dropdown-content{display: none;position: absolute;background-color: #f9f9f9;min-width: 160px;box-shadow: 0px 8px 16px 0px rgba(0,0,0,0,2);padding: 12px 16px;z-index: 1;}
+        .dropdown:hover .dropdown-content {display: block;background-color: aqua;}
+        body{background: rgb(198, 55, 115);background:radial-gradient(circle, rgba(198, 55, 115)3%,rgb(252, 70, 70)100% );}
+    </style>
+</head>
+<body>
+    <h1>CSS установит выпадающий текст при наведении</h1>
+    <p>Текст ниже, откроет выпадающий текст.</p>
+    <div class="dropdown">
+        <span>Navigate here</span>
+        <div class="dropdown-content">
+            <p>Nezuko chan!</p>
+        </div>
+    </div>
+</body>
+</html>
